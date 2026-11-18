@@ -5,27 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Economía Chile · Panel diario</title>
 <style>
-:root{--bg:#FFE4D8;--card:#fff8f5;--tx:#3a0014;--mut:#9a2f55;--bd:#f5c6c9;--ac:#881144;--hd:#800021;--hi:linear-gradient(135deg,#800021,#881144);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#2a0010;--card:#430018;--tx:#FFE4D8;--mut:#e892b0;--bd:#881144;--ac:#FF69B4;--hd:#FF69B4;--hi:linear-gradient(135deg,#800021,#881144);color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#2a0010;--card:#430018;--tx:#FFE4D8;--mut:#e892b0;--bd:#881144;--ac:#FF69B4;--hd:#FF69B4;--hi:linear-gradient(135deg,#800021,#881144);color-scheme:dark}
+:root{--bg:#F2E9FF;--card:#FFFFFF;--tx:#2A1459;--mut:#6F5E96;--bd:#D1B8FF;--ac:#6A2FC8;--ac2:#9D71E8;--hd:#6A2FC8;--hi:#6A2FC8;--sh:rgba(106,47,200,.16);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1B0F36;--card:#2A1A52;--tx:#F2E9FF;--mut:#D1B8FF;--bd:#6A2FC8;--ac:#D1B8FF;--hd:#D1B8FF;--sh:rgba(0,0,0,.35);color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1B0F36;--card:#2A1A52;--tx:#F2E9FF;--mut:#D1B8FF;--bd:#6A2FC8;--ac:#D1B8FF;--hd:#D1B8FF;--sh:rgba(0,0,0,.35);color-scheme:dark}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 main{max-width:1040px;margin:0 auto;padding:20px 16px 40px}
 h1{font-size:1.6rem;margin:0;color:var(--hd)}
 .sub{color:var(--mut);margin:2px 0 18px;font-size:.92rem}
 h2{font-size:1.05rem;margin:0 0 12px;color:var(--hd)}
-.card{background:var(--card);border:1px solid var(--bd);border-radius:18px;padding:16px;box-shadow:0 2px 12px rgba(128,0,33,.14)}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:18px;padding:16px;box-shadow:0 2px 12px var(--sh)}
 .ind{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:16px}
+.ind .card{border-top:4px solid var(--ac2)}
 .ind .l{color:var(--mut);font-size:.85rem}
 .ind .v{font-size:1.7rem;font-weight:650;font-variant-numeric:tabular-nums;color:var(--hd)}
-.ind .card{border-top:4px solid #C41E5C}
 .ind .s{color:var(--mut);font-size:.78rem}
-.res{background:var(--hi);color:#FFE4D8;border-color:transparent;margin-bottom:16px}
-.res h2,.res li b{color:#FFE4D8}
-.res li b{font-size:1.02rem}
+.res{background:var(--hi);color:#F2E9FF;border-color:transparent;margin-bottom:16px}
+.res h2,.res li b{color:#fff}
 .res ol{margin:0;padding-left:1.2em}
 .res li{margin-bottom:10px}
-.res li b{display:block}
+.res li b{display:block;font-size:1.02rem}
 .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px}
 ul.n{list-style:none;margin:0;padding:0}
 ul.n li{padding:10px 0;border-top:1px solid var(--bd)}
@@ -49,33 +48,7 @@ footer{color:var(--mut);font-size:.8rem;margin-top:18px}
 <footer id="foot"></footer>
 </main>
 <script>
-var D={
-updated:"martes 17 de noviembre de 2026",
-ind:{fecha:"17-11-2026",uf:"41.350,42",usd:"1.001,17",eur:"1.102,00"},
-resumen:[
-{t:"El dólar se instala en torno a los $1.000",d:"El dólar observado del Banco Central marca $1.001,17. BioBioChile informó que el dólar cerró en los $1.000 por primera vez desde enero de 2025, en una semana atenta a datos del PIB local y a la Fed."},
-{t:"Combustibles: el Congreso despachó el proyecto que contiene las alzas",d:"El CFA llamó a acotar riesgos y se advirtió que la medida obligaría a reasignar recursos fiscales en 2027."},
-{t:"Presión sobre hogares y empresas",d:"El Banco Central advierte deterioro en la capacidad de pago, y Chile registró la mayor caída del ingreso real por habitante entre los países de la OCDE, según BioBioChile."},
-{t:"Movimientos corporativos",d:"Entel sube en bolsa tras anunciar la venta de su negocio en Perú, CMPC vende sus operaciones forestales en Argentina por US$170 millones y Energía adjudica obras de transmisión por US$500 millones."},
-{t:"Contexto internacional",d:"La producción industrial china crece 4,8 % interanual en octubre, EE.UU. fija límites a la venta de chips de IA antes del viaje de Trump a China y la suspensión de vuelos en EE.UU. podría costar más de US$1.000 millones a las aerolíneas."}
-],
-bio:[
-["Banco Central advierte deterioro en capacidad de pago de hogares y empresas","https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/11/16/banco-central-advierte-deterioro-en-capacidad-de-pago-de-hogares-y-empresas.shtml","16 nov"],
-["Dólar cierra en los $1.000 por primera vez desde enero de 2025","https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/11/16/dolar-cierra-en-los-1-000-por-primera-vez-desde-enero-de-2025.shtml","16 nov"],
-["Congreso despacha proyecto para congelar el alza de los combustibles","https://www.biobiochile.cl/noticias/nacional/chile/2026/11/16/senado-aprobo-la-iniciativa-y-congreso-despacho-proyecto-para-contener-el-alza-de-los-combustibles.shtml","16 nov"],
-["Proyecto para limitar alzas de las bencinas entra al radar del CFA","https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/11/16/proyecto-para-limitar-alzas-de-las-bencinas-entra-al-radar-del-cfa-y-llama-a-acotar-posibles-riesgos.shtml","16 nov"],
-["Acciones de Entel pegan fuerte salto en la Bolsa de Santiago","https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/11/16/acciones-de-entel-pegan-fuerte-salto-en-la-bolsa-de-santiago-tras-anunciar-venta-de-su-negocio-en-peru.shtml","16 nov"],
-["CMPC acuerda la venta de sus operaciones forestales en Argentina por US$170 millones","https://www.biobiochile.cl/noticias/economia/negocios-y-empresas/2026/11/16/cmpc-acuerda-venta-de-sus-operaciones-forestales-en-argentina-por-us170-millones.shtml","16 nov"],
-["Chile anotó la mayor caída del ingreso real por habitante en la OCDE","https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/11/16/chile-anoto-la-mayor-caida-del-ingreso-real-por-habitante-entre-paises-ocde-por-la-inflacion.shtml","16 nov"],
-["Ministerio de Energía adjudica obras de transmisión eléctrica por US$500 millones","https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/11/16/ministerio-de-energia-adjudica-obras-de-transmision-electrica-por-us500-millones.shtml","16 nov"],
-["La producción industrial china frena hasta el 4,8 % interanual en octubre","https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/11/16/la-produccion-industrial-china-frena-hasta-el-48-interanual-en-octubre.shtml","16 nov"]
-],
-coop:[
-["Nokia lidera nuevo consorcio europeo de infraestructuras para la IA","https://www.cooperativa.cl/noticias/tecnologia/industria/ia/nokia-lidera-nuevo-consorcio-europeo-de-infraestructuras-para-la-ia/2026-11-16/075908.html","16 nov"],
-["Marina británica informó de un ataque a buque cisterna cerca del estrecho de Ormuz","https://www.cooperativa.cl/noticias/mundo/iran/marina-britanica-informo-de-un-ataque-a-buque-cisterna-cerca-del/2026-11-15/104445.html","15 nov"],
-["Musk, accionistas y empleados de Nvidia buscan restituir a Huang","https://www.cooperativa.cl/noticias/mundo/ee-uu/sucesos/musk-accionistas-y-empleados-de-nvidia-buscan-restituir-a-huang-tras/2026-11-15/153220.html","15 nov"],
-["Trump urge al Congreso aprobar más fondos para modernizar el sistema aéreo de EE.UU.","https://www.cooperativa.cl/noticias/mundo/ee-uu/trump-urge-al-congreso-aprobar-mas-fondos-para-modernizar-el-sistema/2026-11-15/124235.html","15 nov"]
-]};
+var D={updated:"cargando…",ind:{fecha:"—",uf:"—",usd:"—",eur:"—"},resumen:[],bio:[],coop:[]};
 function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
 function put(id,kids){var n=document.getElementById(id);n.textContent="";kids.forEach(function(k){n.appendChild(k)})}
 function news(arr){return arr.map(function(n){var li=el("li"),a=el("a",null,n[0]);a.href=n[1];a.target="_blank";a.rel="noopener";li.appendChild(a);li.appendChild(el("span","d",n[2]));return li})}
@@ -85,7 +58,7 @@ var I=D.ind,items=[["UF",I.uf],["Dólar observado",I.usd],["Euro",I.eur]];
 put("ind",items.map(function(x){var c=el("div","card");c.appendChild(el("div","l",x[0]));c.appendChild(el("div","v","$"+x[1]));c.appendChild(el("div","s","Banco Central de Chile · "+I.fecha));return c}));
 put("res",D.resumen.map(function(r){var li=el("li");li.appendChild(el("b",null,r.t));if(r.d)li.appendChild(document.createTextNode(r.d));return li}));
 put("bio",news(D.bio));put("coop",news(D.coop));
-document.getElementById("foot").textContent="Fuentes: Banco Central de Chile (Indicadores diarios), BioBioChile y Cooperativa. Los titulares enlazan a la nota original. El resumen es una síntesis editorial de los titulares del día.";
+document.getElementById("foot").textContent="Fuentes: Banco Central de Chile (Indicadores diarios), BioBioChile y Cooperativa. Los titulares enlazan a la nota original. El resumen destaca los titulares con más palabras clave económicas.";
 }
 render(D);
 try{fetch("data.json",{cache:"no-store"}).then(function(r){return r.ok?r.json():null}).then(function(j){if(j&&j.ind)render(j)}).catch(function(){})}catch(e){}
