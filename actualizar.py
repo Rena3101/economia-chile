@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+#!/usr/bin/env python3
 """Regenera data.json (junto a index.html). Solo usa la librería estándar de Python.
 
 - Indicadores (UF, dólar, euro): API mindicador.cl, que replica los valores oficiales.
@@ -44,24 +45,40 @@ def puntaje(titulo):
 
 
 def noticias_bio(h):
-    """Extrae [titulo, enlace, fecha] de la página de Economía de BioBioChile."""
-    out, vistos = [], set()
+    """Extrae [titulo, enlace, fecha] de la página de Economía de BioBioChile.
+    Prueba varias formas de leer el HTML, de la más precisa a la más general."""
+    h = h.replace("\\/", "/")  # enlaces escapados dentro de JSON
+    patron_url = r"/noticias/.+/\d{4}/\d{2}/\d{2}/[^/?#]+\.shtml"
 
-    def agregar(url, bruto):
-        tit = html.unescape(re.sub(r"<[^>]+>", "", bruto)).strip()
-        if url.startswith("/"):
-            url = "https://www.biobiochile.cl" + url
-        if "/noticias/" not in url or len(tit) < 20 or url in vistos:
-            return
-        vistos.add(url)
+    def limpia(url):
+        url = re.split(r"[?#]", url.strip())[0]
+        return "https://www.biobiochile.cl" + url if url.startswith("/") else url
+
+    def fila(url, tit):
         d = re.search(r"/(\d{4})/(\d{2})/(\d{2})/", url)
-        out.append([tit, url, f"{d.group(3)}-{d.group(2)}" if d else ""])
+        return [tit, url, f"{d.group(3)}-{d.group(2)}" if d else ""]
 
-    for m in re.finditer(r'<h2[^>]*>\s*<a[^>]*href="([^"]+)"[^>]*>(.*?)</a>', h, re.S):
-        agregar(m.group(1), m.group(2))
-    if len(out) < 3:  # plan B: cualquier enlace a notas de economía
-        for m in re.finditer(r'<a[^>]*href="([^"]*/noticias/economia/[^"]+\.shtml)"[^>]*>(.*?)</a>', h, re.S):
-            agregar(m.group(1), m.group(2))
+    # 1) Enlaces con texto (sirve si el título va dentro de <h2>, <h3> o <span>)
+    cand, vistos = [], set()
+    for m in re.finditer(r'<a\b[^>]*href="([^"]+)"[^>]*>(.*?)</a>', h, re.S):
+        url = limpia(m.group(1))
+        tit = html.unescape(re.sub(r"<[^>]+>", " ", m.group(2)))
+        tit = re.sub(r"\s+", " ", tit).strip()
+        if re.search(patron_url, url) and len(tit) >= 20 and url not in vistos:
+            vistos.add(url)
+            cand.append(fila(url, tit))
+    out = [c for c in cand if "/noticias/economia/" in c[1]]
+    if len(out) < 3:
+        out = cand
+    # 2) Último recurso: armar el título con el texto del propio enlace
+    if len(out) < 3:
+        urls = []
+        for u in re.findall(r"""(?:https?://www\.biobiochile\.cl)?/noticias/[^\s"'<>\\]+?\.shtml""", h):
+            u = limpia(u)
+            if re.search(patron_url, u) and u not in urls:
+                urls.append(u)
+        pref = [u for u in urls if "/noticias/economia/" in u] or urls
+        out = [fila(u, u.rsplit("/", 1)[-1][:-6].replace("-", " ").capitalize()) for u in pref]
     return out[:10]
 
 
@@ -82,6 +99,7 @@ def seguro(nombre, f):
 
 
 def main():
+    print("actualizar.py versión 3")
     ahora = datetime.now(ZoneInfo("America/Santiago"))
     try:
         with open("data.json", encoding="utf-8") as f:
@@ -102,10 +120,20 @@ def main():
             raise SystemExit("Sin indicadores (mindicador.cl no respondió) y sin datos previos")
         print("AVISO: se conservan los indicadores anteriores:", ind.get("fecha"))
 
-    bio_n = seguro("BioBioChile", lambda: noticias_bio(get(BIO_URL).decode("utf-8", "replace")))
+    def leer_bio():
+        h = get(BIO_URL).decode("utf-8", "replace")
+        notas = noticias_bio(h)
+        print(f"BioBioChile: página de {len(h)} caracteres, {len(notas)} notas encontradas")
+        if not notas:
+            print("Inicio de la página:", re.sub(r"\s+", " ", h[:300]))
+        return notas
+
+    bio_n = seguro("BioBioChile", leer_bio)
     coop_n = seguro("Cooperativa", lambda: noticias_rss(get(COOP_RSS)))
     bio = bio_n or previo.get("bio", [])
-    coop = ([n for n in coop_n if puntaje(n[0]) > 0][:6] if coop_n else None) or previo.get("coop", [])
+    rel = [n for n in (coop_n or []) if puntaje(n[0]) > 0]
+    print(f"Cooperativa: {len(coop_n or [])} notas en el feed, {len(rel)} con palabras clave")
+    coop = (rel[:6] or (coop_n or [])[:4]) or previo.get("coop", [])
     print(f"BioBioChile: {len(bio)} notas | Cooperativa: {len(coop)} notas")
     if not bio and not coop:
         raise SystemExit("Sin noticias: no se actualiza data.json")
