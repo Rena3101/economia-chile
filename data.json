@@ -1,10 +1,10 @@
 {
- "updated": "17-11-2026 23:48",
+ "updated": "18-11-2026 08:12",
  "ind": {
-  "fecha": "17-11-2026",
-  "uf": "41.350,42",
-  "usd": "1.001,17",
-  "eur": "1.102,00"
+  "fecha": "18-11-2026",
+  "uf": "41.357,30",
+  "usd": "996,68",
+  "eur": "1.098,03"
  },
  "resumen": [
   {
@@ -24,11 +24,16 @@
    "d": ""
   },
   {
-   "t": "La empresa de ia de elon musk pone la mirada en chile revelan reuniones de lobby con autoridades",
+   "t": "Arauco compromete venta de activos forestales en el maule a fondo canadiense por us470 millones",
    "d": ""
   }
  ],
  "bio": [
+  [
+   "Arauco compromete venta de activos forestales en el maule a fondo canadiense por us470 millones",
+   "https://www.biobiochile.cl/noticias/economia/negocios-y-empresas/2026/11/17/arauco-compromete-venta-de-activos-forestales-en-el-maule-a-fondo-canadiense-por-us470-millones.shtml",
+   "17-11"
+  ],
   [
    "Mercado chileno ajusta sus expectativas y preve que el pais no crecera en 2026",
    "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/11/10/mercado-chileno-ajusta-sus-expectativas-y-preve-que-el-pais-no-crecera-en-2026.shtml",
@@ -73,18 +78,28 @@
    "Millonario que se reunio con kast compra acciones de petrolera argentina que tiene negocios con enap",
    "https://www.biobiochile.cl/noticias/economia/negocios-y-empresas/2026/08/17/millonario-que-se-reunio-con-kast-compra-acciones-de-petrolera-argentina-que-tiene-negocios-con-enap.shtml",
    "17-08"
-  ],
-  [
-   "La empresa de ia de elon musk pone la mirada en chile revelan reuniones de lobby con autoridades",
-   "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/11/17/la-empresa-de-ia-de-elon-musk-pone-la-mirada-en-chile-revelan-reuniones-de-lobby-con-autoridades.shtml",
-   "17-11"
   ]
  ],
  "coop": [
   [
-   "[Radio en vivo🎙] Las reacciones tras el empate de La Roja y Colombia en el Monumental",
-   "https://www.cooperativa.cl/noticias/deportes/futbol/seleccion-chilena/radio-en-vivo-las-reacciones-tras-el-empate-de-la-roja-y-colombia-en/2026-11-16/135815.html",
-   "16 Nov"
+   "El campeón estrena el título: La programación de la fecha 28 de la Liga de Primera",
+   "https://www.cooperativa.cl/noticias/deportes/futbol/liga-de-primera/el-campeon-estrena-el-titulo-la-programacion-de-la-fecha-28-de-la-liga/2026-11-08/214949.html",
+   "08 Nov"
+  ],
+  [
+   "¿Cuándo y dónde ver el debut de La Roja en el Mundial Sub 17 en Catar?",
+   "https://www.cooperativa.cl/noticias/deportes/futbol/mundial-sub-17/cuando-y-donde-ver-el-debut-de-la-roja-en-el-mundial-sub-17-en-catar/2026-11-17/192528.html",
+   "17 Nov"
+  ],
+  [
+   "Hombre murió tras ser atacado a disparos en San Ramón",
+   "https://www.cooperativa.cl/noticias/pais/policial/homicidios/hombre-murio-tras-ser-atacado-a-disparos-en-san-ramon/2026-11-18/080040.html",
+   "18 Nov"
+  ],
+  [
+   "¿Cuándo volverá a jugar la selección chilena?",
+   "https://www.cooperativa.cl/noticias/deportes/futbol/seleccion-chilena/cuando-volvera-a-jugar-la-seleccion-chilena/2026-11-17/214427.html",
+   "17 Nov"
   ]
  ]
 }
