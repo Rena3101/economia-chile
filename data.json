@@ -1,5 +1,5 @@
 {
- "updated": "22-11-2026 08:03",
+ "updated": "22-11-2026 16:16",
  "ind": {
   "fecha": "22-11-2026",
   "uf": "41.384,81",
@@ -8,11 +8,15 @@
  },
  "resumen": [
   {
+   "t": "Codelco cerraria 2026 con su produccion mas baja en tres decadas pese a precios historicos del cobre",
+   "d": ""
+  },
+  {
    "t": "El futuro de la industria 4 de cada 10 de las grandes empresas mineras en chile usa centros remotos",
    "d": ""
   },
   {
-   "t": "California indaga la presunta venta ilegal de chips de Nvidia a China",
+   "t": "Codelco abre un millon de hectareas a privados en china congreso exige resguardo del control estatal",
    "d": ""
   },
   {
@@ -22,13 +26,19 @@
   {
    "t": "Gremio de casinos presenta amparo economico contra el sii por cobros a casas de apuestas online",
    "d": ""
-  },
-  {
-   "t": "A lo batman milei dijo que suena con un cybertruck pero tambien con mas autos chinos en argentina",
-   "d": ""
   }
  ],
  "bio": [
+  [
+   "Codelco cerraria 2026 con su produccion mas baja en tres decadas pese a precios historicos del cobre",
+   "https://www.biobiochile.cl/noticias/economia/negocios-y-empresas/2026/11/20/codelco-cerraria-2026-con-su-produccion-mas-baja-en-tres-decadas-pese-a-precios-historicos-del-cobre.shtml",
+   "20-11"
+  ],
+  [
+   "Codelco abre un millon de hectareas a privados en china congreso exige resguardo del control estatal",
+   "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/11/21/codelco-abre-un-millon-de-hectareas-a-privados-en-china-congreso-exige-resguardo-del-control-estatal.shtml",
+   "21-11"
+  ],
   [
    "Revelan que casa de apuestas ilegal en chile tenia el 996 de su efectivo en firma del mismo dueno",
    "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/11/18/revelan-que-casa-de-apuestas-ilegal-en-chile-tenia-el-996-de-su-efectivo-en-firma-del-mismo-dueno.shtml",
@@ -68,23 +78,28 @@
    "Mineria y uso de ia la tecnologia que transforma operaciones y abre nuevas oportunidades para chile",
    "https://www.biobiochile.cl/noticias/economia/negocios-y-empresas/2026/11/20/mineria-y-uso-de-ia-la-tecnologia-que-transforma-operaciones-y-abre-nuevas-oportunidades-para-chile.shtml",
    "20-11"
-  ],
-  [
-   "Revelan que bill gates visito chuquicamata y que pidio que fuera bajo estricta reserva",
-   "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/11/05/revelan-que-bill-gates-visito-chuquicamata-y-que-pidio-que-fuera-bajo-estricta-reserva.shtml",
-   "05-11"
-  ],
-  [
-   "Oposicion exige aclarar si visita de bill gates a chuquicamata incluyo negociaciones con privados",
-   "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/11/20/oposicion-exige-aclarar-si-visita-de-bill-gates-a-chuquicamata-incluyo-negociaciones-con-privados.shtml",
-   "20-11"
   ]
  ],
  "coop": [
   [
-   "California indaga la presunta venta ilegal de chips de Nvidia a China",
-   "https://www.cooperativa.cl/noticias/mundo/ee-uu/california-indaga-la-presunta-venta-ilegal-de-chips-de-nvidia-a-china/2026-11-21/223202.html",
-   "21 Nov"
+   "COP31 fracasó al no alcanzar un acuerdo y reflejó las fisuras del multilateralismo",
+   "https://www.cooperativa.cl/noticias/sociedad/medioambiente/cumbres-cop/cop31-fracaso-al-no-alcanzar-un-acuerdo-y-reflejo-las-fisuras-del/2026-11-22/152839.html",
+   "22 Nov"
+  ],
+  [
+   "Cartelera de conciertos 2026 en Chile",
+   "https://www.cooperativa.cl/noticias/magazine/musica/shows-en-vivo/cartelera-de-conciertos-2026-en-chile/2025-12-01/082152.html",
+   "01 Dec"
+  ],
+  [
+   "Dos rusos fallecieron en Magallanes tras choque entre minibús de turistas y camión argentino",
+   "https://www.cooperativa.cl/noticias/pais/policial/accidentes-de-transito/dos-rusos-fallecieron-en-magallanes-tras-choque-entre-minibus-de/2026-11-22/154522.html",
+   "22 Nov"
+  ],
+  [
+   "Pochettino vivio una pesadilla en su debut en Manchester United y fue goleado por Liverpool",
+   "https://www.cooperativa.cl/noticias/deportes/futbol/liga-inglesa/pochettino-vivio-una-pesadilla-en-su-debut-en-manchester-united-y-fue/2026-11-22/154650.html",
+   "22 Nov"
   ]
  ]
 }
