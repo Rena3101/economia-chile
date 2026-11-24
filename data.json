@@ -1,18 +1,22 @@
 {
- "updated": "23-11-2026 18:02",
+ "updated": "24-11-2026 02:48",
  "ind": {
-  "fecha": "23-11-2026",
-  "uf": "41.391,69",
-  "usd": "1.017,17",
-  "eur": "1.116,54"
+  "fecha": "24-11-2026",
+  "uf": "41.398,57",
+  "usd": "1.017,66",
+  "eur": "1.107,84"
  },
  "resumen": [
+  {
+   "t": "Mirada contrapuesta en la moneda mas apuesta por bajar tasas y quiroz valida endurecimiento monetario",
+   "d": ""
+  },
   {
    "t": "Black friday 2026 proyectan ventas por us570 millones y suma ia para buscar productos y ofertas",
    "d": ""
   },
   {
-   "t": "Alice huang quien es la empresaria china rodeada de misterios y acusada de espiar al ceo de nvidia",
+   "t": "Elon musk celebra el regreso de jensen huang como ceo de nvidia se ha rectificado el error",
    "d": ""
   },
   {
@@ -22,13 +26,19 @@
   {
    "t": "Duro 11 dias fuera nvidia vuelve a contratar a jensen huang como su ceo tras crisis por infidelidad",
    "d": ""
-  },
-  {
-   "t": "El regreso del ceo mas poderoso del mundo de sus infidelidades a dimitir y volver al frente de nvidia",
-   "d": ""
   }
  ],
  "bio": [
+  [
+   "Elon musk celebra el regreso de jensen huang como ceo de nvidia se ha rectificado el error",
+   "https://www.biobiochile.cl/noticias/economia/negocios-y-empresas/2026/11/23/elon-musk-celebra-el-regreso-de-jensen-huang-como-ceo-de-nvidia-se-ha-rectificado-el-error.shtml",
+   "23-11"
+  ],
+  [
+   "Mirada contrapuesta en la moneda mas apuesta por bajar tasas y quiroz valida endurecimiento monetario",
+   "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/11/23/mirada-contrapuesta-en-la-moneda-mas-apuesta-por-bajar-tasas-y-quiroz-valida-endurecimiento-monetario.shtml",
+   "23-11"
+  ],
   [
    "Black friday 2026 proyectan ventas por us570 millones y suma ia para buscar productos y ofertas",
    "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/11/23/black-friday-2026-proyectan-ventas-por-us570-millones-y-suma-ia-para-buscar-productos-y-ofertas.shtml",
@@ -50,11 +60,6 @@
    "23-11"
   ],
   [
-   "Elon musk celebra el regreso de jensen huang como ceo de nvidia se ha rectificado el error",
-   "https://www.biobiochile.cl/noticias/economia/negocios-y-empresas/2026/11/23/elon-musk-celebra-el-regreso-de-jensen-huang-como-ceo-de-nvidia-se-ha-rectificado-el-error.shtml",
-   "23-11"
-  ],
-  [
    "El factor que tiene al cafe en rebeldia toco su mayor alza de los ultimos 26 anos",
    "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/07/07/el-factor-que-tiene-al-cafe-en-rebeldia-toco-su-mayor-alza-de-los-ultimos-26-anos.shtml",
    "07-07"
@@ -73,32 +78,27 @@
    "Jpmorgan advierte que el nino podria seguir elevando el precio de los alimentos durante 2027",
    "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/11/23/jpmorgan-advierte-que-el-nino-podria-seguir-elevando-el-precio-de-los-alimentos-durante-2027.shtml",
    "23-11"
-  ],
-  [
-   "Alice huang quien es la empresaria china rodeada de misterios y acusada de espiar al ceo de nvidia",
-   "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/11/10/alice-huang-quien-es-la-empresaria-china-rodeada-de-misterios-y-acusada-de-espiar-al-ceo-de-nvidia.shtml",
-   "10-11"
   ]
  ],
  "coop": [
   [
-   "Leandro Paredes llevó tranquilidad tras su desmayo y celebró los títulos de Boca",
-   "https://www.cooperativa.cl/noticias/deportes/futbol/boca-juniors/leandro-paredes-llevo-tranquilidad-tras-su-desmayo-y-celebro-los-titulos/2026-11-23/175537.html",
-   "23 Nov"
+   "Atentado en el centro de Colombia dejó al menos 12 heridos y graves daños materiales",
+   "https://www.cooperativa.cl/noticias/mundo/colombia/atentado-en-el-centro-de-colombia-dejo-al-menos-12-heridos-y-graves/2026-11-24/005126.html",
+   "24 Nov"
   ],
   [
-   "La zona central vivirá una semana calurosa, con máximas de hasta 35 grados",
-   "https://www.cooperativa.cl/noticias/pais/tiempo/la-zona-central-vivira-una-semana-calurosa-con-maximas-de-hasta-35/2026-11-23/174127.html",
-   "23 Nov"
+   "Inteligencia occidental alerta sobre posible despliegue de un arma nuclear rusa en el espacio",
+   "https://www.cooperativa.cl/noticias/mundo/rusia/inteligencia-occidental-alerta-sobre-posible-despliegue-de-un-arma/2026-11-24/003446.html",
+   "24 Nov"
   ],
   [
-   "Mourinho defendió el exigente calendario: Para ganar dinero hay que trabajar mucho",
-   "https://www.cooperativa.cl/noticias/deportes/futbol/real-madrid/mourinho-defendio-el-exigente-calendario-para-ganar-dinero-hay-que/2026-11-23/174943.html",
-   "23 Nov"
+   "Corte dejó sin efecto permiso ambiental de proyecto ligado a los Piñera en el lago Ranco",
+   "https://www.cooperativa.cl/noticias/pais/sebastian-pinera/corte-dejo-sin-efecto-permiso-ambiental-de-proyecto-ligado-a-los-pinera/2026-11-24/000918.html",
+   "24 Nov"
   ],
   [
-   "StartupLab Patagonia: La estrategia de innovación tecnológica de Puerto Varas",
-   "https://www.cooperativa.cl/noticias/economia/pymes/startuplab-patagonia-la-estrategia-de-innovacion-tecnologica-de-puerto/2026-11-23/173152.html",
+   "Naviera chilena no pedirá permiso a Argentina para retomar ruta Punta Arenas-Malvinas",
+   "https://www.cooperativa.cl/noticias/pais/relaciones-exteriores/argentina/naviera-chilena-no-pedira-permiso-a-argentina-para-retomar-ruta-punta/2026-11-23/233639.html",
    "23 Nov"
   ]
  ]
